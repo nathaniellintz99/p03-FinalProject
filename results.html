@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!-- Nathaniel Lintz: Project 3 -->
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <title>Song Recommendation</title>
+    <link rel="stylesheet" type="text/css"href="styleIndex.css"/> <!-- general styling-->
+    <script type="text/javascript" src="script.js"></script>
+    <script src="https://connect.soundcloud.com/sdk/sdk-3.1.2.js"></script>
+  </head>
+  <body class="body">
+    <ul class="nav">
+      <li><a class="link" href="list.html">Song List</a></li>
+      <li><a class="link" href="quiz.html">Quiz</a></li>
+      <li><a class="link" href="index.html">Home</a></li>
+    </ul>
+    <div class="container">
+      <div class="containerInner">
+        <p class="resultsHeader">We hope you will enjoy this song!</p>
+        <p>Based on your selections, we have chosen the song <a id="song"/> for you to listen to!
+        <br>
+        <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/146159376&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+      </div>
+
+    </div>
+
+
+
+    <div class="bottom">
+      <a class="source" href="https://soundcloud.com/pages/embed" target="_blank">plugin</a>
+      &nbsp;<a class="source" href="http://imgur.com/gallery/s8fEA" target="_blank">background</a>
+    </div>
+  </body>
+</html>
