@@ -1,37 +1,16 @@
 // Nathaniel Lintz: Project 3
 
-SC.initialize({
-  client_id: 'YOUR_CLIENT_ID'
-});
+var url = ["https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/146159376&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true",
+"",
+""]
 
-var track_url = 'https://soundcloud.com/search?q=flume%20tennis%20court';
-SC.oEmbed(track_url, { auto_play: true }).then(function(oEmbed) {
-  console.log('oEmbed response: ', oEmbed);
-});
-
-
-
-
-
-
-
-
-function addItem1(){
-  var itemArr = [];
-  var input = document.getElementById("input").value;
-  myArray.push(input);
+function test(){
+  document.getElementById('myIframe').src = url[0];
 }
-function colorArray(){
-  var colorArr = [];
-  myArray.push()
-}
+
 function compare(){
-  if(){
-    document.getElementById("verdict").classList.add("show1");
-    document.getElementById("verdict").classList.remove("hide");
+  if(party === true){
   }
-  if(){
-    document.getElementById("verdict").classList.add("show2");
-    document.getElementById("verdict").classList.remove("hide");
+  else{
   }
 }

@@ -4,9 +4,9 @@
   <head>
     <meta charset="utf-8">
     <title>Song Recommendation</title>
-    <link rel="stylesheet" type="text/css"href="styleIndex.css"/> <!-- general styling-->
+    <link rel="stylesheet" type="text/css" href="style.css"/>
     <script type="text/javascript" src="script.js"></script>
-    <script src="https://connect.soundcloud.com/sdk/sdk-3.1.2.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
   </head>
   <body class="body">
     <ul class="nav">
@@ -16,15 +16,18 @@
     </ul>
     <div class="container">
       <div class="containerInner">
-        <p class="resultsHeader">We hope you will enjoy this song!</p>
-        <p>Based on your selections, we have chosen the song <a id="song"/> for you to listen to!
-        <br>
-        <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/146159376&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+        <p class="h1 border">Here's an EDM Song for You!</p>
       </div>
+      <div class="container2">
+        <p>There are hundreds of electronic music
+        <ul class="songInfo">
+          <li><a id="songName"/>podfiowejf</li>
+          <li><a id="songArtist"/>hi</li>
+        </ul>
+      </div>
+      <iframe src="test();" width="100%" height="500" scrolling="no" frameborder="no"></iframe>
 
     </div>
-
-
 
     <div class="bottom">
       <a class="source" href="https://soundcloud.com/pages/embed" target="_blank">plugin</a>
