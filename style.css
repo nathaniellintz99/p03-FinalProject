@@ -26,6 +26,12 @@ p{
   position: fixed;
   margin: auto;
 }
+#content{
+  display:none;
+}
+#content.show{
+  display:block;
+}
 .containerInner{
   width: 960px;
   margin: auto;
@@ -68,29 +74,75 @@ p{
   outline: none;
   border: 0px;
   background-color: grey;
-
   text-align: center;
   font-size: 30px;
   color: black;
   text-shadow: 1px 1px rgba(0,0,0,0.2);
 }
 .col1{
-  float: left;
-  width: 30%;
-  left: 30px;
-  margin: auto;
+  width: 800px;
+}
+#box input[type=checkbox]{
+  background-color: none;
+
 }
 .col2{
-  margin-left: 3%;
-  float: left;
-  width: 25%;
+  margin-left: 20px;
+  text-align: left;
+  width: 100px;
   -webkit-column-break-inside: avoid;
   page-break-inside: avoid;
   break-inside: avoid-column;
 }
+.songLeft{
+  float: left;
+  width: 600px;
+  height: inherit;
+}
+.songRight{
+  float: left;
+  margin-left: 20px;
+  text-align: left;
+  height: inherit;
+  width: 340px;
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+  break-inside: avoid-column;
+}
+.div1{
+  float: left;
+  margin: 10px 10px 10px 10px;
+  height: 300px;
+  width: 300px;
+  border: 3px solid none;
+}
+.div2{
+  float: left;
+  margin-left: 20px;
+  margin: 10px 10px 10px 10px;
+  width: 300px;
+  height: 300px;
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+  break-inside: avoid-column;
+  border: 3px solid rgb(0,0,0,0);
+}
+.div3{
+  float: left;
+  margin: 10px 10px 10px 10px;
+  width: 300px;
+  height: 300px;
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+  break-inside: avoid-column;
+  border: 3px solid none;
+}
+.div1:hover, .div2:hover, .div3:hover{
+  box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.4);
+}
 .welcome{
   color: white;
-  font-size: 20px;
+  font-size: 24px;
   text-align: center;
   text-shadow: 1px 1px rgba(0,0,0,0.2);
   text-transform: none;
@@ -111,6 +163,31 @@ p{
   line-height: 1.5cm;
   text-shadow: 1px 1px rgba(0,0,0,0.2);
 }
+.quiz{
+	width: 960px;
+  height: 40px;
+	background-color: rgba(0,0,0,0.2);
+  border-color: none;
+  border-radius: 5px;
+  margin: 0px;
+  z-index: 9999;
+  box-shadow: 0 4px 2px -2px rgba(0,0,0,0.2);
+}
+.quiz li{
+	display: inline;
+}
+.quizFont{
+  padding: 8px 15px;
+	text-decoration: none;
+  background-color: none;
+  font-size: 20px;
+	color: white;
+  text-decoration: none;
+}
+.quizFont:hover{
+  color: #AECFE5;
+  text-decoration: none;
+}
 .button{
   background-color: white;
   font-size: 24px;
@@ -124,7 +201,7 @@ p{
   border-radius: 5px;
   margin-right: 40px;
 }
-#button1{
+.buttonQuiz{
   background-color: white;
   font-size: 24px;
   weight: 600;
@@ -133,13 +210,10 @@ p{
   color: #6c5aa8;
   text-shadow: 1px 1px rgba(0,0,0,0.2);
   text-decoration: none;
-  padding: 5px 10px;
+  padding: 5px 10px 5px 10px;
   border-radius: 5px;
   margin-right: 40px;
-  border: solid 4px blue;
-}
-.buttonTrue{
-  border: solid 4px green;
+  border: solid 4px none;
 }
 .button:hover{
   color: #AECFE5;

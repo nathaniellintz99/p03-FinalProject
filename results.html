@@ -3,12 +3,11 @@
 <html lang="en-US">
   <head>
     <meta charset="utf-8">
-    <title>Personality Quiz</title>
-    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <title>Full Song List</title>
+    <link rel="stylesheet" type="text/css"href="style.css"/>
     <script type="text/javascript" src="script.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   </head>
-  <body class="body">
+  <body class="body" onload="loadSong();">
     <ul class="nav">
       <li><a class="link" href="list.html">Song List</a></li>
       <li><a class="link" href="quiz.html">Quiz</a></li>
@@ -16,16 +15,15 @@
     </ul>
     <div class="container">
       <div class="containerInner">
-        <p class="h1 border">Personality Quiz</p>
-        <div class="quiz">
-          <li><button class="quizFont">Next Question</button></li>
+        <p class="h1 border"style="font-size: 32px;">We Found a Song for you!</p>
+        <div class="songLeft">
+          <iframe id="myFrame" src="about:blank" width="100%" height="450" scrolling="no" frameborder="no"></iframe>
         </div>
-          <div class="col1">Would you prefer to relax
-          </div>
-          <div class="col2">
-            <input type="checkbox"/>
-          </div>
+        <div class="songRight">
+        <p style="font-size: 20px"><a style="color: white" id="songPage">Song</a>: <a id="song"></a><br><a style="color: white" id="artistPage">Artist</a>: <a id="artist"></a>
+        </p>
         </div>
+      </div>
     </div>
     <div class="bottom">
       <a class="source" href="http://shareandembed.help.soundcloud.com/customer/portal/articles/2167172-embedding-a-track-or-playlist-" target="_blank">plugin</a>
