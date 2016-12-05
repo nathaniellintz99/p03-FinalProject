@@ -11,6 +11,7 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  text-shadow: 1px 1px rgba(0,0,0,0.2);
 }
 p{
   text-decoration: none;
@@ -18,7 +19,7 @@ p{
 .container{
   background: none;
   width: 100%;
-  height: 90%;
+  height: 100%;
   top: 0;
   left: 0;
   right: 0;
@@ -43,13 +44,56 @@ p{
   text-align: center;
   text-transform: uppercase;
 }
+.choice{
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 4px;
+  padding-right: 4px;
+  outline: none;
+  border: 0px;
+  background-color: grey;
+  border: solid 4px black;
+  text-align: center;
+  font-size: 30px;
+  border-top: black;
+  text-shadow: 1px 1px rgba(0,0,0,0.2);
+}
+.choiceGood{
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 4px;
+  padding-right: 4px;
+  width: 100px;
+  height: 60px;
+  outline: none;
+  border: 0px;
+  background-color: grey;
+
+  text-align: center;
+  font-size: 30px;
+  color: black;
+  text-shadow: 1px 1px rgba(0,0,0,0.2);
+}
+.col1{
+  float: left;
+  width: 30%;
+  left: 30px;
+  margin: auto;
+}
+.col2{
+  margin-left: 3%;
+  float: left;
+  width: 25%;
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+  break-inside: avoid-column;
+}
 .welcome{
   color: white;
   font-size: 20px;
   text-align: center;
   text-shadow: 1px 1px rgba(0,0,0,0.2);
   text-transform: none;
-  background-color: rgba(0,0,0,0.1);
   border-radius: 5px;
 }
 .border{
@@ -78,6 +122,24 @@ p{
   text-decoration: none;
   padding: 10px 30px;
   border-radius: 5px;
+  margin-right: 40px;
+}
+#button1{
+  background-color: white;
+  font-size: 24px;
+  weight: 600;
+  text-align: center;
+  box-shadow: 1px 1px rgba(0,0,0,0.2);
+  color: #6c5aa8;
+  text-shadow: 1px 1px rgba(0,0,0,0.2);
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-right: 40px;
+  border: solid 4px blue;
+}
+.buttonTrue{
+  border: solid 4px green;
 }
 .button:hover{
   color: #AECFE5;
