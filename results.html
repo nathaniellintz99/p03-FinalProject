@@ -6,16 +6,20 @@
     <title>Full Song List</title>
     <link rel="stylesheet" type="text/css"href="style.css"/>
     <script type="text/javascript" src="script.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
   </head>
   <body class="body" onload="loadSong();">
     <ul class="nav">
+      <li><a class="name">Nate Lintz</a></li>
       <li><a class="link" href="list.html">Song List</a></li>
       <li><a class="link" href="quiz.html">Quiz</a></li>
       <li><a class="link" href="index.html">Home</a></li>
     </ul>
-    <div class="container">
+    <div class="container banner">
       <div class="containerInner">
-        <p class="h1 border"style="font-size: 32px;">We Found a Song for you!</p>
+        <p class="h1 border">We Found a Song for you!</p>
+      </div>
+      <div class="containerInner">
         <div class="songLeft">
           <iframe id="myFrame" src="about:blank" width="100%" height="450" scrolling="no" frameborder="no"></iframe>
         </div>
@@ -25,9 +29,9 @@
         </div>
       </div>
     </div>
-    <div class="bottom">
-      <a class="source" href="http://shareandembed.help.soundcloud.com/customer/portal/articles/2167172-embedding-a-track-or-playlist-" target="_blank">plugin</a>
-      &nbsp;<a class="source" href="http://imgur.com/gallery/s8fEA" target="_blank">background</a>
-    </div>
+    <ul class="navBottom">
+      <li><a class="linkBottom" href="http://wallpapersafari.com/music-production-wallpaper/" target="_blank">Photo</a></li>
+      <li><a class="linkBottom" href="http://shareandembed.help.soundcloud.com/customer/portal/articles/2167172-embedding-a-track-or-playlist-" target="_blank">Plugin</a></li>
+    </ul>
   </body>
 </html>
