@@ -9,7 +9,7 @@ var song = ["Back Where I Belong", "Feel The Volume", "Miami 82 (Kygo Remix)"];
 var songPage = ["https://soundcloud.com/otto-knows/otto-knows-ft-avicii-back-where-i-belong", "https://soundcloud.com/jauzofficial/feelthevolume", "https://soundcloud.com/kygo/syn-cole-miami-82-kygo-remix"];
 var artist = ["Otto Knows ft. Avicii", "Jauz", "Syn Cole"];
 var artistPage = ["https://soundcloud.com/otto-knows", "https://soundcloud.com/jauzofficial", "https://soundcloud.com/kygo"];
-var results = 2;
+var results = song1;
 var i = results;
 var fullList = [song1];
 var song1 = {song:"Back Where I Belong", artist:"Otto Knows ft. Avicii", songUrl:"https://soundcloud.com/otto-knows/otto-knows-ft-avicii-back-where-i-belong", artistUrl:"https://soundcloud.com/otto-knows", embed:"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/265040990&amp;auto_play=false&amp;hide_related=false&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false&amp;visual=true"};

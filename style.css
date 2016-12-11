@@ -5,7 +5,6 @@
 
 body{
   font-family: 'Open Sans', sans-serif;
-  background-color: white;
 }
 p{
   font-size: 20px;
@@ -52,6 +51,25 @@ p{
   right: 0;
   text-align: center;
 }
+.containerIndex{
+  width: 960px;
+  margin: auto;
+  margin-top: 0px;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: auto;
+  text-align: center;
+}
+.indexPhoto{
+  height: 800px;
+  width: 100%;
+  background: url(http://cdn.wallpapersafari.com/52/99/sjkWEt.jpg) center center;
+  overflow: hidden;
+  position: fixed;
+  margin-top: 45px;
+
+}
 
 /* -- fade effect -- */
 .hover{
@@ -72,26 +90,23 @@ p{
 /* -- Header Photo Banners.. -- */
 .bannerIndex{
   width: 100%;
-  height: 400px;
+  height: 350px;
   background-color: #3769DB;
-  box-shadow: 0px 10px 5px rgba(0,0,0,0.4), 0px -10px 5px rgba(0,0,0,0.4);
 }
 .banner{
   width: 100%;
   height: 240px;
   background-color: #3769DB;
-  box-shadow: 0 3px 4px -2px rgba(0,0,0,0.4), 0 -3px 4px 2px rgba(0,0,0,0.4);
 }
 
 /* -- Header stylings... -- */
 .indexH{
   font-family: inherit;
-  font-size: 80px;
+  font-size: 60px;
   font-weight: bold;
   color: white;
   text-align: center;
   text-transform: uppercase;
-  text-shadow: 0 1px 2px 2px rgba(0,0,0,0.2);
 }
 .pageH{
   font-family: inherit;
@@ -100,19 +115,22 @@ p{
   color: white;
   text-align: center;
   text-transform: uppercase;
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
 }
 .border{
   border: 5px solid white;
   padding: 15px 20px;
   box-shadow: 1px 1px rgba(0,0,0,0.2);
-  border-radius: 5px;
+  border-radius: 10px;
+  margin: auto;
 }
 .borderBlack{
-  border: 3px solid black;
+  border: inset 2px solid white;
   padding: 15px 20px;
-  border-radius: 5px;
-  background: white;
+  border-radius: 10px;
+  background: #3769DB;
+  font-size: 24px;
+  color: white;
+  font-weight: 400;
 }
 
 /* -- Button styling -- */
@@ -124,6 +142,7 @@ p{
   color: white;
   text-shadow: 1px 1px rgba(0,0,0,0.2);
   text-decoration: none;
+  text-transform: uppercase;
   padding: 10px 30px;
   border: 2px solid #3769DB;
   border-radius: 5px;
@@ -165,6 +184,12 @@ p{
   width: 600px;
   height: 450px;
 }
+.iframeBorder2{
+  border: 8px solid #3769DB;
+  opacity: 0.7;
+  border-radius: 3px;
+}
+
 /* -- list.html organization -- */
 .listInfo{
 
@@ -180,7 +205,7 @@ p{
   opacity: 0.7;
   border-radius: 3px;
 }
-.iframeBorder:hover{
+.iframeBorder:hover, .iframeBorder2:hover{
   opacity: 1.0;
 }
 
@@ -209,7 +234,7 @@ p{
   left: 0;
   margin: 0px;
   z-index: 9999;
-  box-shadow: 0 4px 2px -2px rgba(0,0,0,0.2);
+/*  box-shadow: 0 3px 3px 0px rgba(0,0,0,0.5); */
 }
 .nav li{
 	display: inline;
@@ -247,7 +272,7 @@ p{
   left: 0;
   margin: 0px;
   z-index: 9999;
-  box-shadow: 0 -4px 2px -2px rgba(0,0,0,0.2);
+/*  box-shadow: 0 -2px 2px 0px rgba(0,0,0,0.5); */
 }
 .navBottom li{
 	display: inline;
