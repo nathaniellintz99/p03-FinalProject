@@ -3,35 +3,41 @@
 <html lang="en-US">
   <head>
     <meta charset="utf-8">
-    <title>Full Song List</title>
+    <title>Results</title>
     <link rel="stylesheet" type="text/css"href="style.css"/>
     <script type="text/javascript" src="script.js"></script>
     <script src="http://code.jquery.com/jquery-latest.js"></script>
   </head>
-  <body class="body" onload="loadSong();">
-    <ul class="nav">
-      <li><a class="name">Nate Lintz</a></li>
-      <li><a class="link" href="list.html">Song List</a></li>
-      <li><a class="link" href="quiz.html">Quiz</a></li>
-      <li><a class="link" href="index.html">Home</a></li>
-    </ul>
+  <body onload="loadResults();">
     <div class="container banner">
-      <div class="containerInner">
-        <p class="h1 border">We Found a Song for you!</p>
+      <div class="containerTitle">
+        <p class="pageH border">We Found a Song for you!</p>
       </div>
-      <div class="containerInner">
+      <div class="containerInner1">
         <div class="songLeft">
-          <iframe id="myFrame" src="about:blank" width="100%" height="450" scrolling="no" frameborder="no"></iframe>
+          <h1>Now Playing:</h1>
+          <p>
+            <a class="linkBlue" id="songPage" target="_blank">Song</a>: <a id="song"></a>
+            <br><a class="linkBlue" id="artistPage" target="_blank">Artist</a>: <a id="artist"></a>
+          </p>
         </div>
         <div class="songRight">
-        <p style="font-size: 20px"><a style="color: white" id="songPage">Song</a>: <a id="song"></a><br><a style="color: white" id="artistPage">Artist</a>: <a id="artist"></a>
-        </p>
+          <div class="iframeResults iframeBorder hover">
+            <iframe id="myFrame" src="about:blank" width="100%" height="450" scrolling="no" frameborder="no"></iframe>
+          </div>
         </div>
+
       </div>
+      <ul class="nav">
+        <li><a id="name">Nate Lintz</a></li>
+        <li><a id="link" href="list.html">Song List</a></li>
+        <li><a id="link" href="quiz.html">Quiz</a></li>
+        <li><a id="link" href="index.html">Home</a></li>
+      </ul>
+      <ul class="navBottom">
+        <li><a id="linkBottom" href="http://wallpapersafari.com/music-production-wallpaper/" target="_blank">Photo</a></li>
+        <li><a id="linkBottom" href="http://shareandembed.help.soundcloud.com/customer/portal/articles/2167172-embedding-a-track-or-playlist-" target="_blank">Plugin</a></li>
+      </ul>
     </div>
-    <ul class="navBottom">
-      <li><a class="linkBottom" href="http://wallpapersafari.com/music-production-wallpaper/" target="_blank">Photo</a></li>
-      <li><a class="linkBottom" href="http://shareandembed.help.soundcloud.com/customer/portal/articles/2167172-embedding-a-track-or-playlist-" target="_blank">Plugin</a></li>
-    </ul>
   </body>
 </html>

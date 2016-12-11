@@ -3,16 +3,18 @@
 /* Google Roboto Font */
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,500,600,800');
 
-.body{
+body{
   font-family: 'Open Sans', sans-serif;
-  color: black;
   background-color: white;
 }
 p{
-  font-weight: 500;
+  font-size: 20px;
+  font-weight: 400;
   text-decoration: none;
+  color: black;
 }
-/* -- Main Container -- */
+
+/* -- Primary Containers -- */
 .container{
   background: none;
   width: 100%;
@@ -20,8 +22,51 @@ p{
   top: 0;
   left: 0;
   right: 0;
-  position: fixed;
+  position: absolute;
   margin: auto;
+}
+.containerTitle{
+  width: 960px;
+  margin: auto;
+  margin-top: 100px;
+  left: 0;
+  right: 0;
+  position: auto;
+  text-align: center;
+}
+.containerInner1{
+  width: 960px;
+  margin: auto;
+  margin-top: 60px;
+  left: 0;
+  right: 0;
+  position: auto;
+  text-align: center;
+}
+.containerInner2{
+  width: 90%;
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+/* -- fade effect -- */
+.hover{
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  transition: all .3s ease;
+}
+.hover:hover{
+  -webkit-transition: all .3s ease-out;
+  -moz-transition: all .3s ease-out;
+  -o-transition: all .3s ease-out;
+  -ms-transition: all .3s ease-out;
+  transition: all .3s ease-out;
 }
 
 /* -- Header Photo Banners.. -- */
@@ -29,63 +74,34 @@ p{
   width: 100%;
   height: 400px;
   background-color: #3769DB;
-  box-shadow: 0 3px 4px -2px rgba(0,0,0,0.4);
+  box-shadow: 0px 10px 5px rgba(0,0,0,0.4), 0px -10px 5px rgba(0,0,0,0.4);
 }
 .banner{
   width: 100%;
   height: 240px;
   background-color: #3769DB;
-  box-shadow: 0 3px 4px -2px rgba(0,0,0,0.4);
+  box-shadow: 0 3px 4px -2px rgba(0,0,0,0.4), 0 -3px 4px 2px rgba(0,0,0,0.4);
 }
-/* -- Content Containers... -- */
-.containerInner{
-  width: 960px;
-  margin: auto;
-  margin-top: 100px;
-  left: 0;
-  right: 0;
-  text-align: center;
-  text-transform: uppercase;
-  position: auto;
-}
-.containerInner2{
-  width: 80%;
-  margin: auto;
-  margin-top: 20px;
-  left: 0;
-  right: 0;
-  text-align: center;
-  text-transform: uppercase;
-}
-/* -- quiz.html Organization --*/
-.col1{
-  width: 800px;
-}
-.col2{
-  margin-left: 20px;
-  text-align: left;
-  width: 100px;
-  -webkit-column-break-inside: avoid;
-  page-break-inside: avoid;
-  break-inside: avoid-column;
-}
-/* -- results.html Organization.. -- */
-.songLeft{
-  float: left;
-  width: 600px;
-  height: inherit;
-}
-.songRight{
-  float: left;
-  margin-left: 20px;
-  text-align: left;
-  height: inherit;
-  width: 340px;
-  -webkit-column-break-inside: avoid;
-  page-break-inside: avoid;
-  break-inside: avoid-column;
-}
+
 /* -- Header stylings... -- */
+.indexH{
+  font-family: inherit;
+  font-size: 80px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 1px 2px 2px rgba(0,0,0,0.2);
+}
+.pageH{
+  font-family: inherit;
+  font-size: 45px;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
 .border{
   border: 5px solid white;
   padding: 15px 20px;
@@ -93,26 +109,12 @@ p{
   border-radius: 5px;
 }
 .borderBlack{
-  border: 2px solid black;
+  border: 3px solid black;
   padding: 15px 20px;
   border-radius: 5px;
+  background: white;
 }
-.h1{
-  font-family: inherit;
-  font-size: 45px;
-  font-weight: 600;
-  color: white;
-  text-align: center;
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
-}
-.h1Index{
-  font-family: inherit;
-  font-size: 80px;
-  font-weight: bold;
-  color: white;
-  text-align: center;
-  text-shadow: 0 1px 2px 2px rgba(0,0,0,0.2);
-}
+
 /* -- Button styling -- */
 .button{
   background-color: #3769DB;
@@ -131,6 +133,71 @@ p{
   color: #3769DB;
   background-color: white;
 }
+
+/* -- quiz.html Organization --*/
+.col1{
+  width: 800px;
+}
+.col2{
+  margin-left: 20px;
+  text-align: left;
+  width: 100px;
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+  break-inside: avoid-column;
+}
+/* -- results.html Organization.. -- */
+.songLeft{
+  float: left;
+  text-align: left;
+  height: inherit;
+  width: 340px;
+  text-transform: uppercase;
+}
+.songRight{
+  float: left;
+  width: 600px;
+  height: inherit;
+  margin-left: 20px;
+}
+.iframeResults{
+  margin: 5px;
+  width: 600px;
+  height: 450px;
+}
+/* -- list.html organization -- */
+.listInfo{
+
+}
+.iframeList{
+  margin: 5px;
+  height: 150px;
+  width: 300px;
+  display: inline-block;
+}
+.iframeBorder{
+  border: 5px solid #3769DB;
+  opacity: 0.7;
+  border-radius: 3px;
+}
+.iframeBorder:hover{
+  opacity: 1.0;
+}
+
+/* -- misc. -- */
+.imgShadow{
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+  -khtml-box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+}
+.linkBlue{
+  color: #3769DB;
+  text-decoration: none;
+}
+.linkBlue:hover{
+  text-decoration: underline;
+}
 /* -- Top Nav bar stuff -- */
 .nav{
 	width: 100%;
@@ -147,7 +214,7 @@ p{
 .nav li{
 	display: inline;
 }
-.link{
+#link{
   float: right;
   margin-right: 40px;
   padding: 8px 15px;
@@ -156,11 +223,10 @@ p{
   font-size: 18px;
 	color: black;
 }
-.link:hover{
-  color: #4A4A4A;
-  text-decoration: none;
+#link:hover{
+  color: #3769DB;
 }
-.name{
+#name{
   float: left;
   margin-left: 40px;
   padding: 8px 15px;
@@ -170,42 +236,7 @@ p{
 	color: black;
   text-transform: uppercase;
 }
-/* list.html organization -- */
-.div1{
-  float: left;
-  margin: 5px;
-  height: 300px;
-  width: 300px;
-}
-.div2{
-  float: left;
-  margin: 5px;
-  width: 300px;
-  height: 300px;
-}
-.div3{
-  float: left;
-  margin: 5px;
-  width: 300px;
-  height: 300px;
-}
-.player{
-  border: 5px solid transparent;
-  border-radius: 3px;
-}
-.player:hover{
-  border: 5px solid #3769DB;
-  border-radius: 3px;
-}
-/* -- misc. -- */
-.imgShadow{
-  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
-  -moz-box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
-  -webkit-box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
-  -khtml-box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
-}
-
-/* -- bottom bar stuff -- */
+/* -- Bottom nav bar stuff -- */
 .navBottom{
 	width: 100%;
   position: fixed;
@@ -221,7 +252,7 @@ p{
 .navBottom li{
 	display: inline;
 }
-.linkBottom{
+#linkBottom{
   float: right;
   margin-right: 40px;
   padding: 8px 15px;
@@ -230,7 +261,7 @@ p{
   font-size: 12px;
 	color: black;
 }
-.linkBottom:hover{
-  color: #4A4A4A;
+#linkBottom:hover{
+  color: #3769DB;
   text-decoration: none;
 }
