@@ -11,15 +11,17 @@
   <body onload="loadResults();">
     <div class="container banner">
       <div class="containerTitle">
-        <p class="pageH border">We Found a Song for you!</p>
+        <p class="pageH border">Song Match!</p>
       </div>
       <div class="containerInner1">
         <div class="songLeft">
-          <h1>Now Playing:</h1>
-          <p>
-            <a class="linkBlue" id="songPage" target="_blank">Song</a>: <a id="song"></a>
-            <br><a class="linkBlue" id="artistPage" target="_blank">Artist</a>: <a id="artist"></a>
-          </p>
+          <div style="text-transform: uppercase">
+            <h1>Now Playing:</h1>
+            <p><a class="linkBlue" id="songPage" target="_blank">Song</a>: <a id="song"></a>
+            <br><a class="linkBlue" id="artistPage" target="_blank">Artist</a>: <a id="artist"></a></p>
+          </div>
+          <p>We hope you like the song we selected for you.  Click the button below to discover more music!</p>
+          <br><a class="button hover" href="list.html">Song List</a>
         </div>
         <div class="songRight">
           <div class="iframeResults iframeBorder hover">
@@ -35,7 +37,6 @@
         <li><a id="link" href="index.html">Home</a></li>
       </ul>
       <ul class="navBottom">
-        <li><a id="linkBottom" href="http://wallpapersafari.com/music-production-wallpaper/" target="_blank">Photo</a></li>
         <li><a id="linkBottom" href="http://shareandembed.help.soundcloud.com/customer/portal/articles/2167172-embedding-a-track-or-playlist-" target="_blank">Plugin</a></li>
       </ul>
     </div>

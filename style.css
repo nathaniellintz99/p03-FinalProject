@@ -1,16 +1,19 @@
 /* Nathaniel Lintz: Project 3 */
 
 /* Google Roboto Font */
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,500,600,800');
-
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
 body{
   font-family: 'Open Sans', sans-serif;
 }
+h1, h2, h3{
+  font-family: 'Roboto', sans-serif;
+}
 p{
+  font-family: 'Roboto', sans-serif;
   font-size: 20px;
   font-weight: 400;
   text-decoration: none;
-  color: black;
+  color: #212121;
 }
 
 /* -- Primary Containers -- */
@@ -101,52 +104,55 @@ p{
 
 /* -- Header stylings... -- */
 .indexH{
-  font-family: inherit;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 10px;
   font-size: 60px;
-  font-weight: bold;
   color: white;
+  font-weight: 300;
   text-align: center;
   text-transform: uppercase;
+  font-style: italic;
 }
 .pageH{
-  font-family: inherit;
-  font-size: 45px;
-  font-weight: 600;
+  font-family: 'Roboto', sans-serif;
+  font-size: 50px;
+  letter-spacing: 10px;
+  font-weight: 300;
   color: white;
   text-align: center;
   text-transform: uppercase;
+  font-style: italic;
 }
 .border{
-  border: 5px solid white;
+  border: 3px solid white;
   padding: 15px 20px;
   box-shadow: 1px 1px rgba(0,0,0,0.2);
   border-radius: 10px;
   margin: auto;
 }
-.borderBlack{
-  border: inset 2px solid white;
+.borderBox{
+  border: 3px solid #3769DB;
   padding: 15px 20px;
   border-radius: 10px;
-  background: #3769DB;
-  font-size: 24px;
-  color: white;
-  font-weight: 400;
+  background: white;
+  margin: auto;
 }
 
 /* -- Button styling -- */
 .button{
   background-color: #3769DB;
-  font-size: 24px;
-  font-weight: 600;
+  font-family: 'Roboto', sans-serif;
+  font-size: 28px;
   text-align: center;
   color: white;
-  text-shadow: 1px 1px rgba(0,0,0,0.2);
+  font-style: italic;
   text-decoration: none;
   text-transform: uppercase;
-  padding: 10px 30px;
+  padding: 15px 30px;
   border: 2px solid #3769DB;
   border-radius: 5px;
-  margin-right: 40px;
+  margin: auto;
+  letter-spacing: 2px;
 }
 .button:hover{
   color: #3769DB;
@@ -154,58 +160,94 @@ p{
 }
 
 /* -- quiz.html Organization --*/
-.col1{
-  width: 800px;
+.quizLeft{
+  float: left;
+  width: 520px;
+  height: auto;
+  margin: 10px;
+  text-align:left;
+  font-size: 20px;
+  line-height: 60px;
 }
-.col2{
-  margin-left: 20px;
+.quizRight{
+  float: left;
   text-align: left;
-  width: 100px;
-  -webkit-column-break-inside: avoid;
-  page-break-inside: avoid;
-  break-inside: avoid-column;
+  height: auto;
+  margin: 10px;
+  width: 400px;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-style: italic;
+  line-height: 60px;
+}
+ol li{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 2px solid transparent;
+}
+li.radios{
+  list-style: none;
+  text-align: center;
+  margin: 10px;
+  padding-right: 10px;
+  color: white;
+  background: #3769DB;
+  border: 2px solid #3769DB;
+  border-radius: 5px;
+}
+input[type=radio]{
+  margin-left: 20px;
+  margin-right: 20px;
+  vertical-align: sub;
+  height: 20px;
+  width: 20px;
 }
 /* -- results.html Organization.. -- */
 .songLeft{
   float: left;
   text-align: left;
   height: inherit;
-  width: 340px;
-  text-transform: uppercase;
+  margin: 10px;
+  width: 300px;
+  height: auto;
 }
 .songRight{
   float: left;
   width: 600px;
   height: inherit;
-  margin-left: 20px;
+  margin: 10px;
 }
 .iframeResults{
   margin: 5px;
   width: 600px;
   height: 450px;
 }
-.iframeBorder2{
+.iframeBorder{
   border: 8px solid #3769DB;
-  opacity: 0.7;
-  border-radius: 3px;
+  opacity: 0.8;
+  border-radius: 8px;
 }
 
 /* -- list.html organization -- */
 .listInfo{
-
+  width: 300px;
+  height: auto;
+  top: 0;
+  margin: 10px;
+  padding: 0;
+  display: inline-block;
+  opacity: 0.7;
+  text-align: center;
+  border: 5px solid #3769DB;
+  border-radius: 8px;
 }
 .iframeList{
-  margin: 5px;
-  height: 150px;
+  margin: 0;
+  height: 300px;
   width: 300px;
-  display: inline-block;
+  bottom: 0;
 }
-.iframeBorder{
-  border: 5px solid #3769DB;
-  opacity: 0.7;
-  border-radius: 3px;
-}
-.iframeBorder:hover, .iframeBorder2:hover{
+.listInfo:hover, .iframeBorder:hover{
   opacity: 1.0;
 }
 
@@ -219,6 +261,7 @@ p{
 .linkBlue{
   color: #3769DB;
   text-decoration: none;
+  font-weight: 600;
 }
 .linkBlue:hover{
   text-decoration: underline;
@@ -256,9 +299,9 @@ p{
   margin-left: 40px;
   padding: 8px 15px;
 	text-decoration: none;
-	font-weight: 600;
+	font-weight: 500;
   font-size: 18px;
-	color: black;
+	color: #212121;
   text-transform: uppercase;
 }
 /* -- Bottom nav bar stuff -- */
@@ -282,9 +325,9 @@ p{
   margin-right: 40px;
   padding: 8px 15px;
 	text-decoration: none;
-	font-weight: 600;
+	font-weight: 400;
   font-size: 12px;
-	color: black;
+	color: #212121;
 }
 #linkBottom:hover{
   color: #3769DB;

@@ -14,11 +14,47 @@
         <p class="pageH border">Personality Quiz</p>
       </div>
       <div class="containerInner1">
-        <h3 style="text-transform: uppercase">For each question, Select the statement you agree with most</h3>
-        <div class="col1">
+        <div class="quizLeft">
+          <ol>
+            <li>Do you prefer music that is energetic or relaxing?</li>
+            <li>Listen to live music or studio recordings?</li>
+            <li>Would you rather sing or dance to music?</li>
+            <li>Pick a color: Red or black?</li>
+            <li>Would you rather stargaze or watch a sunset?</li>
+            <li>Do you prefer pop or rock music?</li>
+          </ol>
         </div>
-        <div class="col2">
+        <div class="quizRight">
+          <ul>
+            <form>
+              <li class="radios">
+                <input type="radio" name="a1"value="energy" id="q1">Energy
+                <input type="radio" name="a1"value="relax" id="q1">Relax
+              </li>
+              <li class="radios">
+                <input type="radio" name="a2" value="live"id="q2">Live
+                <input type="radio" name="a2"value="studio"id="q2">Studio
+              </li>
+              <li class="radios">
+                <input type="radio" name="a3"value="sing"id="q3">Sing
+                <input type="radio" name="a3"value="dance"id="q3">Dance
+              </li>
+              <li class="radios">
+                <input type="radio" name="a4" value="red" id="q4">Red
+                <input type="radio" name="a4" value="black" id="q4">Black
+              </li>
+              <li class="radios">
+                <input type="radio"name="a5" value="stargaze"id="q5">Stargaze
+                <input type="radio"name="a5" value="sunset"id="q5">Sunset
+              </li>
+              <li class="radios">
+                <input type="radio"name="a6" value="pop" id="q6">Pop
+                <input type="radio"name="a6" value="rock"id="q6">Rock
+              </li>
+            </form>
+          </ul>
         </div>
+        <button class="button hover" onclick="check();">Submit</button>
       </div>
       <ul class="nav">
         <li><a id="name">Nate Lintz</a></li>
@@ -27,7 +63,6 @@
         <li><a id="link" href="index.html">Home</a></li>
       </ul>
       <ul class="navBottom">
-        <li><a id="linkBottom" href="http://wallpapersafari.com/music-production-wallpaper/" target="_blank">Photo</a></li>
         <li><a id="linkBottom" href="http://shareandembed.help.soundcloud.com/customer/portal/articles/2167172-embedding-a-track-or-playlist-" target="_blank">Plugin</a></li>
       </ul>
     </div>
