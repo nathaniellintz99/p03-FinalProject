@@ -2,7 +2,7 @@
 
 window.onload = storeSongs;
 // Global variables..
-var quiz, song=[], songPage=[], artist=[], artistPage=[], embed=[];
+var songNumber, song=[], songPage=[], artist=[], artistPage=[], embed=[];
 
 function storeSongs(){
   song = ["Back Where I Belong", "Feel The Volume", "Miami 82 (Kygo Remix)"];
@@ -15,12 +15,14 @@ function storeSongs(){
 
 }
 function loadResults(){
-  var i = 2;
+  var cookie = document.cookie;
+  if(i){
   document.getElementById("myFrame").src = embed[i];
   document.getElementById("song").innerHTML = song[i];
   document.getElementById("songPage").href = songPage[i];
   document.getElementById("artist").innerHTML = artist[i];
   document.getElementById("artistPage").href = artistPage[i];
+  }
 }
 
 function loadList(){
@@ -33,11 +35,29 @@ function loadList(){
   }
 }
 function check(){
-    var answers = document.getElementById("q1");
-    x.checked = true;
-
-
-    window.location = 'results.html';
+    var x1 = document.getElementById("q1");
+    var x2 = document.getElementById("q2");
+    var x3 = document.getElementById("q3");
+    var x4 = document.getElementById("q4");
+    var x5 = document.getElementById("q5");
+    var x6 = document.getElementById("q6");
+    if(x1.checked == true && x2.checked == true && x3.checked == true && x4.checked == true &&x5.checked == true && x6.checked == true){
+      var a1 = document.getElementById("q1").value;
+      var a2 = document.getElementById("q2").value;
+      var a3 = document.getElementById("q3").value;
+      var a4 = document.getElementById("q4").value;
+      var a5 = document.getElementById("q5").value;
+      var a6 = document.getElementById("q6").value;
+      console.log(a1);
+      document.getElementById("go").classList.remove("visibility");
+      if(a1.value == "energy" && a5.value=="stargaze"){
+        songNumber = 2;
+        document.cookie = "" +songNumber;
+      }
+    }
+    else{
+      window.alert("Make sure you answered all the questions!");
+    }
 }
 //courtesy of w3schools, from: http://www.w3schools.com/js/js_cookies.asp
 function setCookie(cname, cvalue, exdays) {
@@ -46,7 +66,6 @@ function setCookie(cname, cvalue, exdays) {
     var expires = "expires="+d.toUTCString();
     document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 }
-//courtesy of w3schools, from: http://www.w3schools.com/js/js_cookies.asp
 function getCookie(cname) {
     var name = cname + "=";
     var ca = document.cookie.split(';');

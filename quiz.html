@@ -6,7 +6,6 @@
     <title>Quiz</title>
     <link rel="stylesheet" type="text/css" href="style.css"/>
     <script type="text/javascript" src="script.js"></script>
-    <script src="http://code.jquery.com/jquery-latest.js"></script>
   </head>
   <body>
     <div class="container banner">
@@ -28,25 +27,30 @@
           <ul>
             <form>
               <li class="radios">
-                <input type="radio" name="a1"value="energy" id="q1">Energy
-                <input type="radio" name="a1"value="relax" id="q1">Relax
+                <input type="radio" name="a1" value="energy" id="q1">Energy
+                <input type="radio" name="a1" value="relax" id="q1">Relax
               </li>
+
               <li class="radios">
                 <input type="radio" name="a2" value="live"id="q2">Live
-                <input type="radio" name="a2"value="studio"id="q2">Studio
+                <input type="radio" name="a2" value="studio"id="q2">Studio
               </li>
+
               <li class="radios">
                 <input type="radio" name="a3"value="sing"id="q3">Sing
                 <input type="radio" name="a3"value="dance"id="q3">Dance
               </li>
+
               <li class="radios">
                 <input type="radio" name="a4" value="red" id="q4">Red
                 <input type="radio" name="a4" value="black" id="q4">Black
               </li>
+
               <li class="radios">
                 <input type="radio"name="a5" value="stargaze"id="q5">Stargaze
                 <input type="radio"name="a5" value="sunset"id="q5">Sunset
               </li>
+
               <li class="radios">
                 <input type="radio"name="a6" value="pop" id="q6">Pop
                 <input type="radio"name="a6" value="rock"id="q6">Rock
@@ -54,7 +58,10 @@
             </form>
           </ul>
         </div>
-        <button class="button hover" onclick="check();">Submit</button>
+        <button class="button hover" onclick="check();">Save</button>
+        <br><br><div id="go" class="visibility">
+          <a class="button hover" href="results.html">Results</a>
+        </div>
       </div>
       <ul class="nav">
         <li><a id="name">Nate Lintz</a></li>

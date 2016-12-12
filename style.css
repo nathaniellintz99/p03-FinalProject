@@ -153,6 +153,7 @@ p{
   border-radius: 5px;
   margin: auto;
   letter-spacing: 2px;
+  cursor:pointer;
 }
 .button:hover{
   color: #3769DB;
@@ -201,6 +202,9 @@ input[type=radio]{
   vertical-align: sub;
   height: 20px;
   width: 20px;
+}
+.visibility{
+  display: none;
 }
 /* -- results.html Organization.. -- */
 .songLeft{
