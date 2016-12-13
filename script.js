@@ -2,7 +2,7 @@
 
 window.onload = storeSongs;
 // Global variables..
-var songNumber, song=[], songPage=[], artist=[], artistPage=[], embed=[];
+var song=[], songPage=[], artist=[], artistPage=[], embed=[];
 
 function storeSongs(){
   song = ["Back Where I Belong", "Feel The Volume", "Miami 82 (Kygo Remix)"];
@@ -15,7 +15,7 @@ function storeSongs(){
 
 }
 function loadResults(){
-  var cookie = document.cookie;
+  var i = getCookie("quiz");
   if(i){
   document.getElementById("myFrame").src = embed[i];
   document.getElementById("song").innerHTML = song[i];
@@ -48,11 +48,10 @@ function check(){
       var a4 = document.getElementById("q4").value;
       var a5 = document.getElementById("q5").value;
       var a6 = document.getElementById("q6").value;
-      console.log(a1);
       document.getElementById("go").classList.remove("visibility");
       if(a1.value == "energy" && a5.value=="stargaze"){
         songNumber = 2;
-        document.cookie = "" +songNumber;
+        setCookie("quiz", songNumber, 7);
       }
     }
     else{
