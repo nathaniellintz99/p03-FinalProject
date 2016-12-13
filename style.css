@@ -93,11 +93,15 @@ p{
 /* -- Header Photo Banners.. -- */
 .bannerIndex{
   width: 100%;
+  left: 0;
+  right: 0;
   height: 350px;
   background-color: #3769DB;
 }
 .banner{
   width: 100%;
+  left: 0;
+  right: 0;
   height: 240px;
   background-color: #3769DB;
 }

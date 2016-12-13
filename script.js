@@ -81,5 +81,5 @@ function getCookie(cname) {
     return "";
 }
 function eraseCookie(name) {
-	createCookie(name,"",-1);
+	setCookie(name,"",-1);
 }
