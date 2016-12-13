@@ -48,8 +48,8 @@ function check(){
       var a4 = document.getElementById("q4").value;
       var a5 = document.getElementById("q5").value;
       var a6 = document.getElementById("q6").value;
-      document.getElementById("go").classList.remove("visibility");
       if(a1.value == "energy" && a5.value=="stargaze"){
+        document.getElementById("go").classList.remove("visibility");
         songNumber = 2;
         setCookie("quiz", songNumber, 7);
       }
