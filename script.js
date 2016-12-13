@@ -35,6 +35,7 @@ function loadList(){
   }
 }
 function check(){
+    setCookie("quiz", "", 7);
     var x1 = document.getElementById("q1");
     var x2 = document.getElementById("q2");
     var x3 = document.getElementById("q3");
