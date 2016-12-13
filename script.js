@@ -16,7 +16,7 @@ function storeSongs(){
 }
 function loadResults(){
   var i = getCookie("quiz");
-  if(i){
+  if(i !== ""){
   document.getElementById("myFrame").src = embed[i];
   document.getElementById("song").innerHTML = song[i];
   document.getElementById("songPage").href = songPage[i];
