@@ -55,7 +55,7 @@ function check(){
       if(x4.checked == true || x4a.checked == true && x5.checked == true || x5a.checked == true && x6.checked == true || x6a.checked == true){
 // did not put input all the logic to pick a song for user
 // (lack of time)
-        Math.floor((Math.random()*(0-5+1))+0);
+        var songNumber = Math.floor((Math.random()*(0-5+1))+0);
         document.getElementById("go").classList.remove('visibility');
         setCookie("quiz", songNumber, 7);
         console.log(getCookie("quiz"));
