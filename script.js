@@ -35,7 +35,7 @@ function loadList(){
   }
 }
 function check(){
-    setCookie("quiz", "", 7);
+    eraseCookie("quiz");
     var x1 = document.getElementById("q1");
     var x2 = document.getElementById("q2");
     var x3 = document.getElementById("q3");
@@ -79,4 +79,7 @@ function getCookie(cname) {
         }
     }
     return "";
+}
+function eraseCookie(name) {
+	createCookie(name,"",-1);
 }
