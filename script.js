@@ -49,7 +49,7 @@ function check(){
       var a5 = document.getElementById("q5").value;
       var a6 = document.getElementById("q6").value;
       document.getElementById("go").classList.remove('visibility');
-        songNumber = 1;
+        var songNumber = 1;
         setCookie("quiz", songNumber, 7);
         console.log(getCookie("quiz"));
 
